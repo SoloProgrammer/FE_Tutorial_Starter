@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+}
+
+html{
+    /* padding: 0; */
+}
+.box {
+    width: 200px;
+    height: 200px;
+    border: 7px solid;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#div-1 {
+    background: red;
+}
+
+#div-2 {
+    background: purple;
+
+}
+
+#div-3 {
+    background: green;
+}
