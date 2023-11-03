@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Tag</title>
+    <style>
+      td,
+      table,
+      th,
+      caption {
+        border: 1px solid;
+      }
+      th,
+      td,
+      caption {
+        padding: 10px 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Product Table
+      </caption>
+      <tbody>
+        <tr>
+          <th rowspan="6">Product ID</th>
+          <th>Product Name</th>
+          <th>Product Quality</th>
+          <th>Product Qty</th>
+        </tr>
+        <tr>
+          <td>wheat</td>
+          <td>good</td>
+          <td>200 bags</td>
+        </tr>
+        <tr>
+          <td>wheat</td>
+          <td>good</td>
+          <td>200 bags</td>
+        </tr>
+        <tr>
+          <td colspan="3">wheat</td>
+        </tr>
+        <tr>
+          <td>wheat</td>
+          <td colspan="2" rowspan="2">200 bags</td>
+        </tr>
+        <tr>
+          <td>wheat</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
