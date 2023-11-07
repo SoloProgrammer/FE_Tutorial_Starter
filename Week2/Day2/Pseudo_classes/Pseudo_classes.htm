@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo_classes</title>
+    <style>
+      /* Hover, active, visited, focus */
+      span:hover {
+        background: magenta;
+      }
+
+      button:active {
+        background: cyan;
+      }
+      input{
+        border-color: mediumspringgreen;
+
+      }
+      input:active{
+        border-bottom: 1px solid red;
+        background: silver;
+      }
+      input:hover{
+      }
+      input:focus {
+        border: none;
+        outline: none;
+      }
+
+      a:visited {
+        color: green;
+      }
+      p:first-child::first-letter{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+        <p>
+            <span>span1</span>
+            <span>span2</span>
+        </p>
+        <p>lorem</p>
+        <p>lorem</p>
+      <button>click me</button>
+      <br />
+      <span>Hover me </span>
+      <br />
+      <a target="_blank" href="https://youtube.com">Youtube.com</a>
+      <br />
+      <input type="text" />
+    </div>
+  </body>
+</html>

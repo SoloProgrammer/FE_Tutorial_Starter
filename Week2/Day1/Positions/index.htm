@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions</title>
+    <style>
+      .parent {
+        border: 1px solid;
+        min-width: 400px;
+        min-height: 300px;
+      }
+      .child {
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+        margin-block: 20px;
+        text-align: center;
+      }
+      #child-1 {
+        position: relative;
+        top: 200px;
+        left: 300px;
+        background: lightslategray;
+      }
+      #child-2 {
+        position: absolute;
+        z-index: 2;
+        background: deeppink;
+      }
+      #child-3 {
+        position: relative;
+        background: red;
+        z-index: 3;
+      }
+      #child-4 {
+        background: green;
+        /* position: absolute; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Positions -->
+    <!-- 1. Static -->
+    <!-- 2. Relative -->
+    <!-- 3. Absolute -->
+
+    <div class="parent">
+      <div class="child" id="child-1">child1</div>
+      <div class="child" id="child-2">child2</div>
+      <div class="child" id="child-3">child3</div>
+      <div class="child" id="child-4">child4</div>
+    </div>
+  </body>
+</html>

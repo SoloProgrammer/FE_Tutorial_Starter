@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Box</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+            box-sizing: border-box;
+        }
+      .container {
+        margin-top: 10px;
+        width: 100vw;
+        /* height: 200px; */
+        border: 2px solid;
+        padding: 10px;
+
+        /* Flex-box */
+        display: flex;
+
+        /* FLex-Properties */
+
+        /* By default flex-direction is row */
+        /* flex-direction: row; 
+        flex-direction: row-reverse;
+        flex-direction: column;
+        flex-direction: column-reverse; */
+
+
+
+        /* justify-content ; */
+        /* justify-content: center;
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly; */
+        /* justify-content: flex-end;
+        justify-content: flex-start; */
+
+        /* align-Items */
+        /* align-items: center;
+        align-items: flex-end;
+        align-items: flex-start; */
+
+        /* gap: 20px; */
+        justify-content: space-between;
+
+        /* wrap */
+        /* flex-wrap: wrap;
+        flex-wrap: wrap-reverse; */
+
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+      }
+      #box2{
+        /* Properties of flex-item */
+        /* flex: 1; */
+        flex-grow: 3;
+        flex-shrink: 1;
+      }
+      #box3{
+        flex-grow: 5;
+        /* flex: 2; */
+        flex-shrink: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">box1</div>
+      <div class="box" id="box2">box2</div>
+      <div class="box" id="box3">box3</div>
+    </div>
+  </body>
+</html>
