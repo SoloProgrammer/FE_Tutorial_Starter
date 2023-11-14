@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+            display: inline-block;
+            margin: 100px;
+            transition: 1s all;
+        }
+        .box1:hover{
+            transform: scale(.5);
+            transform-origin: top right;
+        }
+        .box2:hover{
+            transform: perspective(500px) rotate(-180deg);
+            transform-origin: 50% 50%;
+        }
+        .box3:hover{
+            transform: translate(200px, 200px);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box box1">Box1</div>
+    <div class="box box2">Box2</div>
+    <div class="box box3">Box3</div>
+</body>
+</html>

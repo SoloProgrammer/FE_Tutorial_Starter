@@ -1,0 +1,194 @@
+:root {
+    --white: #fff;
+    --lighter-bg: rgba(0, 0, 0, .02);
+    --light-bg: rgba(0, 0, 0, 0.08);
+    --medium-bg: rgba(0, 0, 0, .1)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 2px 3px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.logo_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.searchBar {
+    position: relative;
+}
+
+.inpt-icon {
+    position: absolute;
+    font-size: 1.3rem;
+    opacity: .7;
+    padding: 7px;
+    border-radius: 50%;
+    top: 8px;
+}
+
+.account-icon {
+    opacity: .7;
+}
+
+.search-icon {
+    left: 8px;
+}
+
+.filter-icon {
+    right: 8px;
+}
+
+.burger {
+    opacity: .5;
+}
+
+.inpt-icon:hover {
+    background: var(--light-bg);
+    cursor: pointer;
+}
+
+.searchBar input {
+    width: 700px;
+    height: 40px;
+    border-radius: 2rem;
+    outline: none;
+    background: #d0daf64f;
+    border: none;
+    padding: 25px 0px 25px 50px;
+    font-size: 1rem;
+}
+
+.searchBar input:focus {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background: var(--white);
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.nav-icons {
+    opacity: .7;
+    border-radius: 50%;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.nav-icons:hover {
+    background: var(--light-bg);
+}
+
+.profile_icon {
+    border-radius: 50%;
+    padding: 9px;
+}
+
+.profile_icon .photo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_icon img {
+    border-radius: 50%;
+}
+
+.profile_icon img:hover {
+    box-shadow: 0 0 0px 5px var(--light-bg);
+    cursor: pointer;
+}
+
+.accountBtn {
+    border-radius: .3rem;
+    padding: 7px 5px;
+}
+
+.accountBtn:hover {
+    box-shadow: 0 0 0 1px var(--medium-bg);
+    background: rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+}
+
+.account-text {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+.accountBtn .account-menus {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    top: 50px;
+    right: 160px;
+    background: var(--white);
+    opacity: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: .3rem;
+    transition: .3s all;
+    pointer-events: none;
+}
+
+.accountBtn:hover .account-menus {
+    opacity: 1;
+    top: 52px;
+    pointer-events: all;
+}
+.arrow-icon{
+    transition: .3s all ease;
+    font-size: 1.1rem;
+}
+.accountBtn:hover .arrow-icon{
+    transform: rotate(180deg);
+}
+
+.account-menus div {
+    font-size: .9rem;
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    padding-right: 30px;
+}
+
+.account-menus div:hover {
+    background: var(--lighter-bg);
+}
+
+.account-menus .account-menu-item {
+    display: flex;
+    gap: 10px;
+}
+
+.account-menu-item img {
+    width: 17px;
+}

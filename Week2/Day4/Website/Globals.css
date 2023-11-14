@@ -1,0 +1,403 @@
+/* Header css */
+
+:root {
+    --white: #fff;
+    --lighter-bg: rgba(0, 0, 0, .02);
+    --light-bg: rgba(0, 0, 0, 0.08);
+    --medium-bg: rgba(0, 0, 0, .1)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 2px 3px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.logo_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.searchBar {
+    position: relative;
+}
+
+.inpt-icon {
+    position: absolute;
+    font-size: 1.3rem;
+    opacity: .7;
+    padding: 7px;
+    border-radius: 50%;
+    top: 8px;
+}
+
+.account-icon {
+    opacity: .7;
+}
+
+.search-icon {
+    left: 8px;
+}
+
+.filter-icon {
+    right: 8px;
+}
+
+.burger {
+    opacity: .5;
+}
+
+.inpt-icon:hover {
+    background: var(--light-bg);
+    cursor: pointer;
+}
+
+.searchBar input {
+    width: 700px;
+    height: 40px;
+    border-radius: 2rem;
+    outline: none;
+    background: #d0daf64f;
+    border: none;
+    padding: 25px 0px 25px 50px;
+    font-size: 1rem;
+}
+
+.searchBar input:focus {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background: var(--white);
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.nav-icons {
+    opacity: .7;
+    border-radius: 50%;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.nav-icons:hover {
+    background: var(--light-bg);
+}
+
+.profile_icon {
+    border-radius: 50%;
+    padding: 9px;
+}
+
+.profile_icon .photo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_icon img {
+    border-radius: 50%;
+}
+
+.profile_icon img:hover {
+    box-shadow: 0 0 0px 5px var(--light-bg);
+    cursor: pointer;
+}
+
+.accountBtn {
+    border-radius: .3rem;
+    padding: 7px 5px;
+}
+
+.accountBtn:hover {
+    box-shadow: 0 0 0 1px var(--medium-bg);
+    background: rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+}
+
+.account-text {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+.accountBtn .account-menus {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    top: 50px;
+    right: 160px;
+    background: var(--white);
+    opacity: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: .3rem;
+    transition: .3s all;
+    pointer-events: none;
+}
+
+
+
+.accountBtn:hover .account-menus {
+    opacity: 1;
+    top: 52px;
+    pointer-events: all;
+}
+
+.arrow-icon {
+    transition: .3s all ease;
+    font-size: 1.1rem;
+}
+
+.accountBtn:hover .arrow-icon {
+    transform: rotate(180deg);
+}
+
+.account-menus div {
+    font-size: .9rem;
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    padding-right: 30px;
+}
+
+.account-menus div:hover {
+    background: var(--lighter-bg);
+}
+
+.account-menus .account-menu-item {
+    display: flex;
+    gap: 10px;
+}
+
+.account-menu-item img {
+    width: 17px;
+}
+
+
+/* Footer css */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+footer .info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+footer .info .center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .info .center input {
+    border: 3px solid var(--medium-bg);
+    height: 40px;
+    font-size: 1rem;
+    padding: 0 20px;
+
+}
+
+footer .info .center button {
+    width: max-content;
+    padding: 10px 40px;
+    border: none;
+    background: rgb(197, 5, 5);
+    color: var(--white);
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+footer .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.left p {
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 130px;
+}
+
+.logo img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+footer .left .social img {
+    width: 30px;
+}
+
+footer .right {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .right .links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+footer .copyRightText {
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Media query */
+
+@media screen and (max-width:1350px) {
+
+    header .searchBar input {
+        /* display: none; */
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width:1150px) {
+
+    header .searchBar input {
+        /* display: none; */
+        width: 350px;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+
+    header .searchBar {
+        display: none;
+        /* width: 350px; */
+    }
+
+}
+
+@media screen and (max-width:968px) {
+    footer .right {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    footer .info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer .center {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    footer .right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    footer {
+        padding: 20px;
+    }
+
+    header .logo_box span {
+        display: none;
+    }
+
+    .account-text {
+        display: none;
+    }
+
+    .accountBtn {
+        position: relative;
+        padding: 0;
+    }
+
+    .accountBtn:hover {
+        box-shadow: none;
+        background: none;
+    }
+
+    .accountBtn:hover .account-menus {
+        top: 0;
+    }
+
+    .accountBtn .account-menus {
+        right: auto;
+        left: -200%;
+        height: 100vh;
+        z-index: 10;
+        top: 0;
+        gap: 20px;
+        width: 55%;
+        pointer-events: all;
+        transition: .2s all;
+    }
+
+    .accountBtn .account-menus.show {
+        opacity: 1;
+        left: 0;
+    }
+
+    nav .app-icon:hover nav .accountBtn .account-menus{
+        opacity: 1;
+        left: 0;
+    }
+}

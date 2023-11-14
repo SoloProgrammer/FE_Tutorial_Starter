@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(1, 1, 27);
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 80%;
+    max-width: 800px;
+    background: #fff;
+    padding: 5px;
+}
+
+.gallery .row {
+    display: flex;
+    gap: 5px;
+}
+
+.gallery .row .imgBox {
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.gallery .row .imgBox:hover img {
+    scale: 1.4;
+}
+
+.gallery .row .imgBox img {
+    width: 100%;
+    height: 100%;
+    transition: .3s all;
+    object-fit: cover;
+}

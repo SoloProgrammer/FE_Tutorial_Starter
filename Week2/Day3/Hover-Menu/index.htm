@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            min-height: 100vh;
+        }
+        .flex-center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrapper{
+            position: relative;
+            padding: 5px 0px;
+            /* border: 1px solid; */
+            /* padding: 2px; */
+        }
+        .wrapper .menu{
+            position: absolute;
+            flex-direction: column;
+            background: #fff;
+            box-shadow: 0 0 2px rgba(0,0,0,.3);
+            top: 50px;
+            opacity: 0;
+            transition: .2s all;
+            pointer-events: none;
+        }
+        .menu span{
+            cursor: pointer;
+            padding: 7px 40px; 
+        }
+        .wrapper:hover  .menu{
+            top: 30px;
+            opacity: 1;
+            pointer-events: all;
+        }
+        .menu span:hover{
+            background: rgba(0,0,0,.05);
+        }
+    </style>
+  </head>
+  <body class="flex-center">
+    <div class="wrapper flex-center">
+      <button>Hover me</button>
+      <div class="menu flex-center">
+        <span>Menu1</span><span>Menu2</span><span>Menu3</span><span>Menu4</span>
+      </div>
+    </div>
+  </body>
+</html>
