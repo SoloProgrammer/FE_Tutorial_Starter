@@ -366,7 +366,6 @@ footer .copyRightText {
     }
 
     .accountBtn {
-        position: relative;
         padding: 0;
     }
 
@@ -392,11 +391,6 @@ footer .copyRightText {
     }
 
     .accountBtn .account-menus.show {
-        opacity: 1;
-        left: 0;
-    }
-
-    nav .app-icon:hover nav .accountBtn .account-menus{
         opacity: 1;
         left: 0;
     }
