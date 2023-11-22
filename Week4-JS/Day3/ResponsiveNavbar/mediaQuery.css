@@ -1,0 +1,28 @@
+@media screen and (max-width:730px) {
+    .icon{
+        display: block;
+        cursor: pointer;
+    }
+    .right {
+        position: absolute;
+        background: white;
+        top: 8%;
+        width: 100%;
+        left: 0;
+        transition: .2s all;
+        padding: 20px 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        top: -300px;
+        z-index: -1;
+    }
+    .right.show{
+        top: 8%;
+    }
+    nav{
+        flex-direction: column;
+        gap: 22px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}

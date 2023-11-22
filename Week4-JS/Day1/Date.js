@@ -16,7 +16,6 @@ date.getMinutes()
 const miiliPerDay = 1000 * 60 * 60 * 24
 const dateOfDayAfterToday = new Date(date.setTime(date.getTime() + (miiliPerDay)))
 
-
 // Formatted date (date-month-year)
 date = new Date()
 // "20 Nov 2023"

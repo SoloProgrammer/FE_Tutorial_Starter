@@ -1,0 +1,38 @@
+*{
+    margin: 0;padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    align-items: center;
+    padding: 0 20px;
+    background: #fff;
+}
+.left img{
+ width: 150px;
+}
+.right {
+    display: flex;
+    gap: 30px;
+}
+nav{
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    padding: 4px 20px;
+    background: rgb(14, 150, 195);
+    color: white;
+    border:none;
+    font-size: 1.2rem;
+}
+.icon{
+    display: none;
+}

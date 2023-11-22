@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid;
+        max-height: 250px;
+        overflow-y: auto;
+      }
+      .inner {
+        width: 50px;
+        height: 50px;
+        border: 1px solid;
+      }
+      .flex {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+      }
+      .div {
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+      }
+      .box2 {
+        background: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Box1" class="box box1">
+      <p>1</p>
+      <div id="Div" class="div flex">
+        <p>2</p>
+        <div id="innerDiv" class="inner flex">3</div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <script src="./index.js"></script>
+  </body>
+</html>

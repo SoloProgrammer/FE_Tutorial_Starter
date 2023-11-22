@@ -381,6 +381,7 @@ footer .copyRightText {
     .accountBtn .account-menus {
         right: auto;
         left: -200%;
+        /* opacity: 1; */
         height: 100vh;
         z-index: 10;
         top: 0;
