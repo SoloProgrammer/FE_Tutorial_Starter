@@ -2,7 +2,6 @@ import products from './products.json' assert {type: "json"}
 
 let productContainer = document.querySelector('.productContainer')
 
-
 products.forEach((product) => {
     let productCard = `<div class="card">
     <div class="imgBox">
